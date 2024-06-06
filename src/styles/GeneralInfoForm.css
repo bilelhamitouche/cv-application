@@ -1,0 +1,12 @@
+.general-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.general-info-form {
+  display: none;
+}
+
+.visible {
+  display: block;
+}

@@ -1,0 +1,13 @@
+.experience-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience-form-list {
+  display: none;
+}
+
+.visible {
+  display: block;
+}

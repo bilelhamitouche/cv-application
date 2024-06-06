@@ -1,0 +1,17 @@
+.education-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.education-form {
+  display: none;
+}
+
+input {
+  display: block;
+}
+
+.visible {
+  display: block;
+}

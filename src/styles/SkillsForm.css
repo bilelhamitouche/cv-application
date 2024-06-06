@@ -1,0 +1,12 @@
+.skills-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-form {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
