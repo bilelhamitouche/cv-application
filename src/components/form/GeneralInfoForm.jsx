@@ -1,62 +1,58 @@
+import { expandHandler } from './expandHandler';
 import '../../styles/GeneralInfoForm.css';
 
-export function GeneralInfoForm({ clickHandler }) {
+export function GeneralInfoForm({ onChangeHandler, generalInfo }) {
   return (
-    <div className="general-form-container">
+    <div className="general-info-form-container">
       <button
-        className="general-form-toggle"
-        onClick={(e) => clickHandler(e)}>
+        className="expand-form-btn"
+        onClick={expandHandler}>
         General Info
       </button>
       <form className="general-info-form">
-        <label htmlFor="fullName">
+        <label>
           <span>Full Name: </span>
           <input
             name="fullName"
             type="text"
-            value=""
-            placeholder="Enter full name"
-            id="fullName"
+            value={generalInfo.fullName}
+            onChange={(e) => onChangeHandler(e)}
           />
         </label>
-        <label htmlFor="designation">
+        <label>
           <span>Designation: </span>
           <input
             name="designation"
             type="text"
-            value=""
-            placeholder="Enter designation"
-            id="designation"
+            value={generalInfo.designation}
+            onChange={(e) => onChangeHandler(e)}
           />
         </label>
-        <label htmlFor="address">
+        <label>
           <span>Address: </span>
           <input
             name="address"
             type="text"
-            value=""
-            placeholder="Enter address"
-            id="address"
+            value={generalInfo.address}
+            onChange={(e) => onChangeHandler(e)}
           />
         </label>
-        <label htmlFor="email">
+        <label>
           <span>Email: </span>
           <input
             name="email"
             type="email"
-            value=""
-            placeholder="Enter email"
-            id="email"
+            value={generalInfo.email}
+            onChange={(e) => onChangeHandler(e)}
           />
         </label>
-        <label htmlFor="phone">
+        <label>
           <span>Phone: </span>
           <input
             name="phone"
             type="tel"
-            value=""
-            placeholder="Enter phone number"
-            id="phone"
+            value={generalInfo.phone}
+            onChange={(e) => onChangeHandler(e)}
           />
         </label>
       </form>

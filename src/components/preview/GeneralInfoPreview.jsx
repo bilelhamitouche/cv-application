@@ -1,15 +1,13 @@
 import '../../styles/GeneralInfoPreview.css';
 
-export function GeneralInfoPreview() {
+export function GeneralInfoPreview({ generalInfo }) {
   return (
-    <section className="general-info-preview">
-      <span className="title">Bilel Hamitouche</span>
-      <span className="designation">Frontend developer</span>
-      <div className="contact-info">
-        <address>56th Street, Ohio</address>
-        <span className="email">example@gmail.com</span>
-        <span className="phone">0557659863</span>
-      </div>
-    </section>
+    <div className="general-info-preview">
+      <span className="full-name">{generalInfo.fullName}</span>
+      <span className="designation">{generalInfo.designation}</span>
+      <address className="address">{generalInfo.address}</address>
+      <span className="email">{generalInfo.email}</span>
+      <span className="phone">{generalInfo.phone}</span>
+    </div>
   );
 }

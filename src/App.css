@@ -1,26 +1,19 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Ariel, sans-serif;
-}
-
 .App {
   padding: 1rem;
   display: grid;
-  grid-template: 1fr / 300px 1fr;
+  grid-template: 1fr / 350px 1fr;
   gap: 2rem;
 }
 
 .cv-form {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  background-color: #fff;
 }
 
-h2 {
-  margin-block: 20px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  text-align: center;
+.cv-preview {
+  padding: 1rem;
+  background-color: #fff;
 }

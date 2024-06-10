@@ -1,24 +1,10 @@
 .general-info-preview {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 0.5rem;
 }
 
-.title {
-  font-size: 3rem;
-  font-weight: 500;
-}
-
-.designation {
+.full-name {
   font-size: 1.5rem;
-}
-
-.contact-info {
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
+  font-weight: 700;
 }

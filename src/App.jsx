@@ -1,35 +1,29 @@
-import './App.css';
+import { initialGeneralInfo } from './data/data';
 import { GeneralInfoForm } from './components/form/GeneralInfoForm';
-import { EducationForm } from './components/form/EducationForm';
-import { SkillsForm } from './components/form/SkillsForm';
-import { ExperienceForm } from './components/form/ExperienceForm';
+import './App.css';
+import { useState } from 'react';
 import { GeneralInfoPreview } from './components/preview/GeneralInfoPreview';
-import { EducationPreview } from './components/preview/EducationPreview';
 
 function App() {
-  function togglerFunction(e) {
-    e.target.parentNode.childNodes[1].classList.toggle('visible');
+  const [generalInfo, setGeneralInfo] = useState(initialGeneralInfo);
+
+  function handleGeneralInfoChange(e) {
+    setGeneralInfo({
+      ...generalInfo,
+      [e.target.name]: e.target.value,
+    });
   }
 
   return (
     <div className="App">
       <div className="cv-form">
-        <GeneralInfoForm clickHandler={togglerFunction} />
-        <ul className="education-list">
-          <EducationForm clickHandler={togglerFunction} />
-          <EducationForm clickHandler={togglerFunction} />
-          <EducationForm clickHandler={togglerFunction} />
-        </ul>
-        <ul className="experience-list">
-          <ExperienceForm clickHandler={togglerFunction} />
-          <ExperienceForm clickHandler={togglerFunction} />
-          <ExperienceForm clickHandler={togglerFunction} />
-        </ul>
-        <SkillsForm clickHandler={togglerFunction} />
+        <GeneralInfoForm
+          onChangeHandler={handleGeneralInfoChange}
+          generalInfo={generalInfo}
+        />
       </div>
       <div className="cv-preview">
-        <GeneralInfoPreview />
-        <EducationPreview />
+        <GeneralInfoPreview generalInfo={generalInfo} />
       </div>
     </div>
   );
