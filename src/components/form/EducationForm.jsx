@@ -1,5 +1,6 @@
 import '../../styles/EducationForm.css';
 import { useState } from 'react';
+import { FaTrash } from 'react-icons/fa';
 
 export function EducationForm({
   onChangeHandler,
@@ -97,7 +98,7 @@ export function EducationForm({
                   <button
                     className="delete-btn"
                     onClick={() => onDeleteHandler(education.id)}>
-                    Delete
+                    <FaTrash />
                   </button>
                 </>
               )}

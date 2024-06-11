@@ -1,5 +1,6 @@
 import '../../styles/ExperienceForm.css';
 import { useState } from 'react';
+import { FaTrash } from 'react-icons/fa';
 
 export function ExperienceForm({
   onChangeHandler,
@@ -90,7 +91,7 @@ export function ExperienceForm({
                   <button
                     className="delete-btn"
                     onClick={() => onDeleteHandler(experience.id)}>
-                    Delete
+                    <FaTrash />
                   </button>
                 </>
               )}
