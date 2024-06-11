@@ -6,11 +6,9 @@
 }
 
 .cv-form {
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background-color: #fff;
 }
 
 .cv-preview {

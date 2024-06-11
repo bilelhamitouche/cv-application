@@ -1,4 +1,3 @@
-
 const initialGeneralInfo = {
   fullName: 'Bilel Hamitouche',
   designation: 'Web developer',
@@ -7,4 +6,23 @@ const initialGeneralInfo = {
   phone: 585566333,
 };
 
-export { initialGeneralInfo };
+const initialEducationInfo = [
+  {
+    id: 1,
+    school: 'Univérsité Alger 1',
+    location: 'Alger',
+    startYear: '2017',
+    endYear: '2019',
+    degree: 'License',
+  },
+  {
+    id: 2,
+    school: 'Univérsité Alger 1',
+    location: 'Alger',
+    startYear: '2019',
+    endYear: '2022',
+    degree: 'Master',
+  },
+];
+
+export { initialGeneralInfo, initialEducationInfo };
