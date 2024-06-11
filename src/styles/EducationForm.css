@@ -6,6 +6,13 @@
   gap: 0.5rem;
 }
 
-input {
-  display: block;
+.add-education-btn {
+  background-color: #fff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.add-education-form {
+  background-color: #fff;
 }

@@ -1,11 +1,1 @@
 @import url('utils.css');
-
-.general-info-form-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-input {
-  display: block;
-}

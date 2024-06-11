@@ -18,21 +18,21 @@ export function ExperienceForm({
     designation: '',
   });
   return (
-    <div className="experience-form-container">
+    <div className="experience-form-container flex flex-column gap-1">
       <button
-        className="btn expand-form-btn"
+        className="btn expand-form-btn box-shadow"
         onClick={() => setIsExpanded(!isExpanded)}>
         Experience
       </button>
       {isExpanded ? (
-        <ul className="experience-list">
+        <ul className="experience-list flex flex-column gap">
           {experienceInfo.map((experience) => (
             <li
-              className="experience"
+              className="experience box-shadow flex justify-between gap-1 rounded"
               key={experience.id}
               onClick={() => setOpened(experience.id)}>
               {isOpened === experience.id ? (
-                <form>
+                <form className="flex flex-column gap-1">
                   <label>
                     <span>Company: </span>
                     <input
@@ -98,7 +98,7 @@ export function ExperienceForm({
           ))}
           {isAddNewExpanded ? (
             <form
-              className="add-experience-form"
+              className="add-experience-form flex flex-column p-2 gap-1 rounded box-shadow"
               onSubmit={(e) => e.preventDefault()}>
               <label>
                 <span>Company: </span>
@@ -170,14 +170,14 @@ export function ExperienceForm({
                   }
                 />
               </label>
-              <div className="form-controls">
+              <div className="form-controls flex justify-between gap-1">
                 <button
-                  className="cancel-experience-btn"
+                  className="cancel-experience-btn cancel-btn rounded"
                   onClick={() => setIsAddNewExpanded(false)}>
                   Cancel
                 </button>
                 <button
-                  className="save-experience-btn"
+                  className="save-experience-btn save-btn rounded"
                   onClick={(e) => {
                     onAddHandler(e, tmpData);
                     setIsAddNewExpanded(false);
@@ -195,7 +195,7 @@ export function ExperienceForm({
             </form>
           ) : (
             <button
-              className="add-experience-btn"
+              className="add-experience-btn box-shadow p-1"
               onClick={() => setIsAddNewExpanded(true)}>
               Add Experience
             </button>

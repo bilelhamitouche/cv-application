@@ -18,21 +18,21 @@ export function EducationForm({
     degree: '',
   });
   return (
-    <div className="education-form-container">
+    <div className="education-form-container flex flex-column gap-1">
       <button
-        className="btn expand-form-btn"
+        className="btn expand-form-btn box-shadow"
         onClick={() => setIsExpanded(!isExpanded)}>
         Education
       </button>
       {isExpanded ? (
-        <ul className="education-list">
+        <ul className="education-list flex flex-column gap">
           {educationInfo.map((education) => (
             <li
-              className="education"
+              className="education flex gap-1 justify-between rounded box-shadow"
               key={education.id}
               onClick={() => setOpened(education.id)}>
               {isOpened === education.id ? (
-                <form>
+                <form className="flex flex-column gap-1">
                   <label>
                     <span>School: </span>
                     <input
@@ -105,7 +105,7 @@ export function EducationForm({
           ))}
           {isAddNewExpanded ? (
             <form
-              className="add-education-form"
+              className="add-education-form flex flex-column gap-1 rounded p-2"
               onSubmit={(e) => e.preventDefault()}>
               <label>
                 <span>School: </span>
@@ -184,14 +184,14 @@ export function EducationForm({
                   required
                 />
               </label>
-              <div className="form-controls">
+              <div className="form-controls flex justify-between gap-1">
                 <button
-                  className="cancel-education-btn"
+                  className="cancel-education-btn cancel-btn rounded"
                   onClick={() => setIsAddNewExpanded(false)}>
                   Cancel
                 </button>
                 <button
-                  className="save-education-btn"
+                  className="save-education-btn save-btn rounded"
                   onClick={(e) => {
                     onAddHandler(e, tmpData);
                     setIsAddNewExpanded(false);
@@ -209,7 +209,7 @@ export function EducationForm({
             </form>
           ) : (
             <button
-              className="add-education-btn"
+              className="add-education-btn p-1 box-shadow"
               onClick={() => setIsAddNewExpanded(true)}>
               Add Education
             </button>

@@ -1,11 +1,13 @@
 @import url('utils.css');
 
-.experience-form-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.add-experience-btn {
+  background-color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-input {
-  display: block;
+.add-experience-form {
+  background-color: #fff;
+  padding: 1rem;
 }

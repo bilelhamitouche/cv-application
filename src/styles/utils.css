@@ -12,7 +12,7 @@
 }
 
 .btn:hover {
-  background-color: #cccccc;
+  transform: scale(1.05);
 }
 
 .flex {
@@ -27,8 +27,36 @@
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .align-center {
   align-items: center;
+}
+
+.gap {
+  gap: 0.2rem;
+}
+
+.gap-1 {
+  gap: 0.5rem;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 1rem;
 }
 
 ul {
@@ -48,4 +76,61 @@ ul {
 
 .grid {
   display: grid;
+}
+
+input {
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+  border: 2px solid #cccccc;
+  border-radius: 0.5rem;
+  display: block;
+  background-color: #fdfdfd;
+  color: #111;
+}
+
+.form {
+  background-color: #fff;
+}
+
+li {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.delete-btn {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.form-controls {
+  margin-top: 10px;
+}
+
+.cancel-btn,
+.save-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.cancel-btn:hover,
+.save-btn:hover {
+  transform: scale(1.05);
+}
+
+.cancel-btn {
+  background-color: #f87171;
+  color: #7f1d1d;
+}
+
+.save-btn {
+  background-color: #4ade80;
+  color: #14532d;
 }
