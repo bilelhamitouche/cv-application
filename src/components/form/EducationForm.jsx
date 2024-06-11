@@ -41,6 +41,7 @@ export function EducationForm({
                       type="text"
                       value={education.school}
                       onChange={(e) => onChangeHandler(e)}
+                      required
                     />
                   </label>
                   <label>
@@ -51,6 +52,7 @@ export function EducationForm({
                       type="text"
                       value={education.location}
                       onChange={(e) => onChangeHandler(e)}
+                      required
                     />
                   </label>
                   <label>
@@ -59,8 +61,10 @@ export function EducationForm({
                       name="startYear"
                       id={education.id}
                       type="text"
+                      pattern="[0-9]{4}"
                       value={education.startYear}
                       onChange={(e) => onChangeHandler(e)}
+                      required
                     />
                   </label>
                   <label>
@@ -69,8 +73,10 @@ export function EducationForm({
                       name="endYear"
                       id={education.id}
                       type="text"
+                      pattern="[0-9]{4}"
                       value={education.endYear}
                       onChange={(e) => onChangeHandler(e)}
+                      required
                     />
                   </label>
                   <label>
@@ -81,6 +87,7 @@ export function EducationForm({
                       type="text"
                       value={education.degree}
                       onChange={(e) => onChangeHandler(e)}
+                      required
                     />
                   </label>
                 </form>
@@ -112,6 +119,7 @@ export function EducationForm({
                       [e.target.name]: e.target.value,
                     })
                   }
+                  required
                 />
               </label>
               <label>
@@ -126,6 +134,7 @@ export function EducationForm({
                       [e.target.name]: e.target.value,
                     })
                   }
+                  required
                 />
               </label>
               <label>
@@ -133,6 +142,7 @@ export function EducationForm({
                 <input
                   name="startYear"
                   type="text"
+                  pattern="[0-9]{4}"
                   value={tmpData.startYear}
                   onChange={(e) =>
                     setTmpData({
@@ -140,6 +150,7 @@ export function EducationForm({
                       [e.target.name]: e.target.value,
                     })
                   }
+                  required
                 />
               </label>
               <label>
@@ -147,6 +158,7 @@ export function EducationForm({
                 <input
                   name="endYear"
                   type="text"
+                  pattern="[0-9]{4}"
                   value={tmpData.endYear}
                   onChange={(e) =>
                     setTmpData({
@@ -154,6 +166,7 @@ export function EducationForm({
                       [e.target.name]: e.target.value,
                     })
                   }
+                  required
                 />
               </label>
               <label>
@@ -168,6 +181,7 @@ export function EducationForm({
                       [e.target.name]: e.target.value,
                     })
                   }
+                  required
                 />
               </label>
               <div className="form-controls">
