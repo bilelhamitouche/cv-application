@@ -1,0 +1,51 @@
+.btn {
+  padding: 1rem;
+  background-color: #fff;
+  color: #111;
+  font-weight: 500;
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #cccccc;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.section-header {
+  padding: 0.2rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+}
