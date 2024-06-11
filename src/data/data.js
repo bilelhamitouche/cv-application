@@ -25,4 +25,23 @@ const initialEducationInfo = [
   },
 ];
 
-export { initialGeneralInfo, initialEducationInfo };
+const initialExperienceInfo = [
+  {
+    id: 1,
+    company: 'ARVEA nature',
+    location: 'Alger',
+    startYear: '2017',
+    endYear: '2019',
+    designation: 'Web Dev',
+  },
+  {
+    id: 2,
+    company: 'SEEAL',
+    location: 'Alger',
+    startYear: '2019',
+    endYear: '2022',
+    designation: 'Web dev',
+  },
+];
+
+export { initialGeneralInfo, initialEducationInfo, initialExperienceInfo };
