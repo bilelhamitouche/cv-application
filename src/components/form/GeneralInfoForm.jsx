@@ -6,12 +6,12 @@ export function GeneralInfoForm({ onChangeHandler, generalInfo }) {
   return (
     <div className="general-info-form-container flex flex-column gap-1">
       <button
-        className="btn expand-form-btn"
+        className="btn expand-form-btn box-shadow"
         onClick={() => setIsExpanded(!isExpanded)}>
         General Info
       </button>
       {isExpanded ? (
-        <form className="general-info-form form flex flex-column p-2 gap-1 rounded">
+        <form className="general-info-form form flex flex-column p-2 gap-1 rounded box-shadow">
           <label>
             <span>Full Name: </span>
             <input
